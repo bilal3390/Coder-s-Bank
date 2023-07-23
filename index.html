@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            margin-top: 7%;
+            margin-left: 30%;
+            width: 40%;
+            height: 500px;
+            background-color: rgb(130, 189, 189, 0.3);
+            text-align: center;
+            border: 1px dotted black;
+            border-radius: 50px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: pink;
+            background-image: url(bg.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        @media screen and (max-width: 768px) {
+            div {
+                width: 80%;
+                margin-left: 10%;
+                height: auto;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            div {
+                width: 90%;
+                margin-left: 5%;
+            }
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 100px;
+            font-size: xx-large;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <h1>Coder's Bank</h1>
+        <div>
+            <br><br><br>
+            <form id="Create">
+                <input type="text" placeholder="Customer Name" id="customerName">
+                <br>
+                <input type="number" placeholder="Initial Balance" id="balance">
+                <br>
+                <button>Create Account</button>
+            </form>
+            <br><br><br>
+            <form id="Deposit">
+                <input type="number" placeholder="Account Number" id="accountNumber">
+                <br>
+                <input type="number" placeholder="Amount" id="amount">
+                <br>
+                <button>Deposit</button>
+            </form>
+            <br><br><br>
+            <form id="Withdraw">
+                <input type="number" placeholder="Account Number" id="accountNumber2">
+                <br>
+                <input type="number" placeholder="Amount" id="amount2">
+                <br>
+                <button>Withdraw</button>
+            </form>
+        </div>
+    </section>
+    <script src="app.js"></script>
+</body>
+
+</html>
